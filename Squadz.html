@@ -541,7 +541,7 @@
 
 </div>
 <script>
-  function tog(card) { card.classList.toggle('open'); }
+  function toggleCard(card) { card.classList.toggle('open'); }
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('vis'); obs.unobserve(e.target); }});
   // Trigger once ~6% of an element is visible so fade-ins start early and feel smooth.
